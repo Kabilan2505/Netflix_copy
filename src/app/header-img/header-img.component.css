@@ -1,0 +1,621 @@
+.main{
+  width: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.container{
+  width: 100%;
+  height: 705px;
+  top: 0;
+  left: 0;
+  position: absolute;
+ background-size: cover;
+  .netflixCover{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transform: scale(1.25) translateX(-10%) translatey(-10%);
+  }
+  .gradient{
+    background: rgb(0 0 0 / 40%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .img{
+    width: 100%;
+    height: 705px;
+  overflow: hidden;
+  }
+
+}
+.img-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 220px;
+  align-items: center;
+  line-height: 1.5rem;
+  width: 100%;
+  height: 400px;
+
+  /*border: 2px solid white;*/
+  position: relative;
+  .content{
+    line-height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+}
+
+.heading1{
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.para1{
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.heading2{
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+.email{
+  position: relative;
+  /*border: 2px solid white;*/
+  max-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .email-field{
+    position: relative;
+    /*border: 1px solid #ffffff;*/
+    border-radius: 3px;
+width: fit-content;
+    height: 65px;
+
+    fill: white;
+    color: rgb(255, 255, 255);
+
+  }
+}
+.logo{
+  position: relative;
+  fill: red;
+  width: 150px;
+  height: fit-content;
+}
+.toolbar {
+  /*border: 2px solid white;*/
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .toolbar-content{
+    width: 79%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    height: fit-content;
+    /*border:2px solid white ;*/
+  }
+}
+.cover-content{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+
+
+}
+::ng-deep .mat-toolbar.mat-primary {
+  --mat-toolbar-container-background-color: #3f51b500;
+  --mat-toolbar-container-text-color: white;
+}
+.sign-lang{
+  font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  min-height: fit-content;
+
+}
+.search{
+  border: 1px solid #989898;
+  border-radius: 4px;
+  min-width: 130px;
+  height: 32px;
+  margin-top: 3px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background: #00000047;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 4px;
+}
+::ng-deep .mat-mdc-select {
+
+  border: 1px solid rgba(255, 255, 255, 0);
+
+  height: fit-content;
+
+}
+::ng-deep .mat-mdc-select-placeholder {
+  transition: color 400ms 133.3333333333ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: rgb(255 255 255)!important;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+::ng-deep .mat-mdc-select-arrow svg {
+  fill: white!important;
+}
+/*::ng-deep .mat-mdc-raised-button:not(:disabled) {*/
+/*  color: var(--mdc-protected-button-label-text-color);*/
+/*  width: fit-content;*/
+/*  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;*/
+/*  height: 32px;*/
+/*  font-size: 13px;*/
+/*}*/
+.button{
+  ::ng-deep .mat-mdc-raised-button:not(:disabled) {
+    color: var(--mdc-protected-button-label-text-color);
+    width: fit-content;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    height: 31px;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+}
+.search:focus{
+  .lang{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 3px;
+  }
+}
+::ng-deep .cdk-text-field-autofill-monitored:not(:-webkit-autofill) {
+  animation: cdk-text-field-autofill-end 0s 1ms;
+  width: 369px;
+  height: 56px;
+  border: 1px solid #656363;
+  border-radius: 2px;
+  background: #00000063;
+  color: white;
+  font-family:  Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ ::ng-deep .mat-mdc-raised-button:not(:disabled) {
+    height: 56px;
+    margin-bottom: 6px;
+    width: 210px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    border-radius: 4px;
+    color: var(--mdc-protected-button-label-text-color);
+  }
+
+::ng-deep .mat-mdc-raised-button.mat-warn {
+  letter-spacing: normal;
+  --mdc-protected-button-container-color: rgb(229, 9, 20);
+  --mdc-protected-button-label-text-color: white;
+  --mat-protected-button-state-layer-color: white;
+  --mat-protected-button-ripple-color: rgba(255, 255, 255, 0.1);
+}
+::ng-deep .mat-icon{
+  transform: scale(0.9) translateY(1px) translateX(2px);
+}
+.border{
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  bottom: -0.6rem;
+  background-color: rgb(35, 35, 35);
+}
+.container2{
+box-sizing: border-box;
+
+height: 600px;
+  width: 100%;
+  /*border: 2px solid white;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content2{
+  width: 80%;
+  height: 450px;
+  /*border: 2px solid red;*/
+  text-align: left;
+  .text{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    .heading3{
+      font-size: 3rem;
+      font-weight: 800;
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+    .para2{
+      margin: 1rem 0 0;
+      font-size: 1.6rem;
+      line-height: 1;
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+  }
+}
+.tv{
+  position: relative;
+width: auto;
+  height: auto;
+  box-sizing: border-box;
+  .tv-img{
+    overflow-clip-margin: content-box;
+    width: 100%;
+    height: 100%;
+  }
+}
+.tv-video{
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container3{
+  box-sizing: border-box;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid white;*/
+}
+.content3{
+  width: 80%;
+  height: 450px;
+  /*border: 2px solid red;*/
+  .stranger-img{
+    width: 50%;
+    height: 100%;
+    img{
+      height: 100%;
+    }
+  }
+}
+.text2{
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  .heading4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+  .para3{
+    margin: 1rem 0 0;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+}
+.inside-img{
+  height:100%;
+margin-right: 1rem;
+}
+.stranger2{
+  bottom: 12%;
+  left: 23%;
+  width: 50%;
+  overflow: hidden;
+  height: 104px;
+  border: 1px solid #8c8989;
+  border-radius: 10px;
+  position: relative;
+  transform: translateY(-80%);
+  padding: 0.25rem 0.65rem;
+  background: black;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.container4{
+  width: 100%;
+  box-sizing: border-box;
+  height: 600px;
+  /*border: 2px solid white;*/
+  padding-top: 72px;
+  padding-bottom: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content4{
+    width: 80%;
+    height: 450px;
+    /*border: 2px solid red;*/
+    .text3{
+      width: 50%;
+      height: 100%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /*border-right: 2px solid red;*/
+      .heading5{
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        font-size: 3rem;
+        font-weight: 800;
+      }
+      .para4{
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 1rem 0 0;
+      }
+
+    }
+  }
+}
+
+.tv2{
+  width: 50%;
+  height: 100%;
+  .tv-img2{
+    position: relative;
+    img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .tv-video2{
+      z-index: -1;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      max-width: 63%;
+      max-height: 47%;
+      position: absolute;
+      top: 8.5%;
+      left: 19%;
+
+    }
+  }
+}
+
+
+.container5{
+  width: 100%;
+  height: 600px;
+  /*border: 2px solid white;*/
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content5{
+    width: 80%;
+    height: 450px;
+    /*border: 2px solid red;*/
+    .img2{
+      width: 50%;
+      height: 100%;
+      position: relative;
+      /*border-right: 2px solid red;*/
+      img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text4{
+
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2{
+
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      }
+      p{
+        margin: 1rem 0 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      }
+    }
+  }
+}
+
+
+.questions{
+  width: 100%;
+  min-height: 930px;
+  box-sizing: border-box;
+  /*border: 2px solid white;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 72px;
+  padding-top: 72px;
+  .ques-content{
+    width: 78%;
+    min-height: fit-content;
+    /*border: 2px solid red;*/
+    .heading6{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2{
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      }
+    }
+    .expand-content{
+      margin: 1rem 0 0;
+      width: 100%;
+      min-height: fit-content;
+      /*border: 2px solid green;*/
+      box-sizing: border-box;
+
+      .ques1{
+
+        padding: 24px;
+        background-color: rgb(45, 45, 45);
+        /*border: 2px solid white;*/
+        span{
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+      }
+      .expand1{
+        margin-top: 2px;
+        background-color: rgb(45, 45, 45);
+        text-align: left;
+        padding: 24px;
+        overflow: hidden;
+        visibility: visible;
+        max-height: 75rem;
+        transition-duration: 250ms;
+        transition-property: background-color;
+        transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+        transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+        span{
+          transition-duration: 250ms;
+          transition-property: background-color;
+          transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+          transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+          font-size: 1.5rem;
+          font-weight: 400;
+          font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        }
+      }
+    }
+
+  }
+}
+
+
+.email2{
+margin-top: 46px;
+  position: relative;
+/*border: 2px solid yellow;*/
+  width: 100%;
+
+  display: flex;
+justify-content: center;
+align-items: center
+}
+.footer{
+  width: 100%;
+  margin-top: 10px;
+  min-height:425px;
+  /*border: 2px solid white;*/
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  .footer-content{
+    width: 75%;
+    height: fit-content;
+    /*border: 2px solid red;*/
+    .call{
+      color: white;
+      /*border: 2px solid yellow;*/
+      font-size: 16px;
+      font-weight: 400;
+      h3{
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+      }
+      a{
+        text-decoration: underline;
+      }
+    }
+    .footer-list{
+      /*border: 2px solid green;*/
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 100%;
+      color: white;
+       ul{
+         width: 25%;
+         padding: 0;
+         text-decoration: none;
+         list-style: none;
+       }li{
+      text-decoration: none;
+               }
+      a{
+        text-decoration: underline;
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.final{
+  width: 100%;
+  color: white;
+  h3{
+    color: white;
+    font-size: 0.875rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+}
+.example{
+  width: 100%;
+  height: 300px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .div2{
+    width: 80%;
+    height: 250px;
+    border:2px solid red;
+    .div3{
+      width: 50%;
+      height:120px;
+      border-right: 2px solid red;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.toolbar {
+  border: 2px solid white;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+ align-items: center;
+  justify-content: center;
+}
+.logo{
+  fill: red;
+  width: 150px;
+  position: relative;
+  height: fit-content;
+}
+.toolbar-content{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: fit-content;
+}

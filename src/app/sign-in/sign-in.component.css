@@ -1,0 +1,221 @@
+body{
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.main{
+  width: 100%;
+  height: 1200px;
+  box-sizing: border-box;
+  /*border: 2px solid white;*/
+  color: rgb(255, 255, 255);
+}
+.content{
+  width: 100%;
+  height: 100%;
+  /*border: 2px solid white;*/
+  position: relative;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}
+.gradient{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.inside-content{
+  width: 100%;
+  height: 160px;
+  /*border: 2px solid white;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  .logo-container{
+    width: 80%;
+    height: 60px;
+    padding: 3rem;
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    /*border: 2px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .logo{
+      width: 150px;
+      height: 40px;
+      position: absolute;
+      fill: red;
+    }
+  }
+
+}
+.signin-form{
+  min-width: 30%;
+  height: 730px;
+  border: 2px solid red;
+  position: absolute;
+  top: 70%;
+  background: rgb(0 0 0 / 70%);
+  /*opacity: 0.7;*/
+  padding: 48px 64px;
+  box-sizing: border-box;
+  .signin-content{
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid white;*/
+
+    h1{
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: rgb(255,255,255);
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+  }
+}
+.input-container{
+  width: 250px;
+  height: 50px;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  vertical-align: text-top;
+  label{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-property: top, font-size, line-height;
+    transition-duration: 250ms;
+    pointer-events: none;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+    left: 1rem;
+    right: 1rem;
+    top: 1rem;
+  }
+  .input{
+    width: 100%;
+    height: 100%;
+    fill: currentcolor;
+    min-width: 12.5rem;
+    padding: 0;
+    input{
+      width: 100%;
+      color: inherit;
+      filter: opacity(0%);
+      padding: 1.5rem 1rem 0.5rem;
+    }
+  }
+}
+.email{
+  position: relative;
+  /*border: 2px solid white;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  .email-field{
+    position: relative;
+    /*border: 1px solid #ffffff;*/
+    border-radius: 3px;
+    width: fit-content;
+    height: 65px;
+
+    fill: white;
+    color: rgb(255, 255, 255);
+
+  }
+}
+.cdk-text-field-autofill-monitored:not(:-webkit-autofill) {
+  animation: cdk-text-field-autofill-end 0s 1ms;
+  width: 335px;
+  border-radius: 5px;
+}
+.button{
+  width: 100%;
+  height: 40px;
+  button{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+}
+.OR{
+
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+  }
+}
+.signin-code{
+  width: 100%;
+  height: 40px;
+  button {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+  }
+}
+::ng-deep .mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: rgba(128,128,128,0.3);
+}
+.forgot{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    width: fit-content;
+    height: fit-content;
+    a{
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+      font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    }
+  }
+}
+
+.remember{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  span{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  }
+}
