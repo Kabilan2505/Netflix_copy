@@ -2,8 +2,8 @@
 body, html{
   background: black;
   width: 100%;
-
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%; font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif; }
 body { margin: 0;   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif; }

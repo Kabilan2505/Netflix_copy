@@ -16,6 +16,7 @@ import {
 } from "@angular/material/expansion";
 import {NgForOf, NgIf} from "@angular/common";
 import {FooterList} from "../footer-list";
+import {RouterLink} from "@angular/router";
 
 export interface questions{
   id:number,
@@ -46,7 +47,8 @@ export interface  footerList{
     MatExpansionPanelTitle,
     MatExpansionPanelDescription,
     NgIf,
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './header-img.component.html',
   styleUrl: './header-img.component.css'
